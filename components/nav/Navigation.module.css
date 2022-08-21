@@ -1,0 +1,32 @@
+.navigation{
+    background-color: black !important;
+    color: white;
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: .1rem 2rem;
+}
+
+
+.nav_items{
+    text-transform: uppercase;
+}
+
+.nav_items *{
+    
+    text-decoration: none;
+    color: white;
+    padding-right: 2rem;
+}
+.registration *{
+    text-decoration: none;
+    padding: .8rem;
+    margin-right: .5rem;
+    border-radius: 3rem;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+
+
+}

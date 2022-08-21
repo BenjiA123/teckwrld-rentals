@@ -1,13 +1,13 @@
 
-import { NextPage } from "next";
+import { FunctionComponent } from "react";
 
-const FooterPage:NextPage=() =>{
+const FooterComponent:FunctionComponent=() =>{
 
     return (
         <div>
-            This is the footer page
+            This is the footer Component
         </div>
     )
 }
 
-export default FooterPage
+export default FooterComponent

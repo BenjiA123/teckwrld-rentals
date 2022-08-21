@@ -1,0 +1,41 @@
+
+.car_preview_section{
+    margin: 0 2rem;
+    display: flex;
+}
+
+.car_preview_description{
+    flex: 4;
+    margin: 2rem;
+}
+.car_preview_slideshow{
+    flex: 10;
+    margin: 2rem;
+    display: flex;
+    overflow-x: scroll;
+
+}
+.car_preview_slideshow::-webkit-scrollbar {
+    display:none;
+  }
+  
+  .car_preview_slideshow::-webkit-scrollbar-track {
+    display:none;
+  }
+  
+  .car_preview_slideshow::-webkit-scrollbar-thumb {
+    display:none;
+  }
+.car_preview_cards{
+    min-width: 15rem;
+}
+
+.car_preview_cards {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: .8rem;
+  border-radius: 2rem;
+}
+.car_preview_cards *:last-child{
+  margin: 1rem;
+}

@@ -1,0 +1,33 @@
+.slider{
+    background-color: white;
+    min-height: fit-content;
+    height: auto;
+    color: black;
+    /* background-image: url(".header_background.jpg"); */
+    padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    flex-direction: column;
+}
+.intro_text{
+    font-size: 4rem;
+    text-align: center;
+    width: 50%;
+}
+
+.cta_items{
+    margin-top: 3rem;
+}
+.cta_items *{
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 1rem;
+    border-radius: 20rem;
+    border: 1px solid black;
+    color: black;
+    padding: 1rem;
+}
+.intro_text_description{
+    font-size: 3rem;
+}

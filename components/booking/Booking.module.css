@@ -1,0 +1,20 @@
+
+.booking{
+    background-color: #0f0f0f;
+    padding: 2rem;
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(2, 1fr);
+}
+.booking input{
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.booking input:focus{
+    border: none;
+    outline: none;
+}
