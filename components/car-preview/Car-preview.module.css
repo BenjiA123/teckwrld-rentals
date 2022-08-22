@@ -28,9 +28,7 @@
   }
 .car_preview_cards{
     min-width: 15rem;
-}
-
-.car_preview_cards {
+    cursor: pointer;
   border: 1px solid black;
   margin: 1rem;
   padding: .8rem;
