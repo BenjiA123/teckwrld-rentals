@@ -1,20 +1,62 @@
-
-.booking{
+.booking_section{
     background-color: #0f0f0f;
-    padding: 2rem;
-    display: grid;
     color: white;
-    grid-template-columns: repeat(2, 1fr);
 }
-.booking input{
+
+.booking_header{
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+}
+.booking{
+    padding: 2rem;
+    display: flex;
+}
+.booking input, .booking select{
     height: 2rem;
     border-radius: 1rem;
     border: none;
     margin: 1rem;
+    width: 80%;
     padding: 1rem;
 }
+.booking select{
+    height: 4rem;
+    width: 90%;
+    padding: 0;
+}
 
-.booking input:focus{
+.booking input:focus,.booking select:focus{
     border: none;
     outline: none;
+}
+.booking_form{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.booking_info{
+    flex: 1;
+}
+.booking_info h2{
+    font-size: 2rem;
+}
+
+.getCar{
+    background-color: transparent;
+    color: white;
+    border-radius: 2rem;
+    border: 1px solid white;
+    padding: 1rem;
+    margin: 2rem;
+    height: 4.5rem;
+    width: 80%;
+}
+
+@media only screen and (max-width: 700px) {
+    .booking{
+        flex-direction: column;
+    }
+    
 }
