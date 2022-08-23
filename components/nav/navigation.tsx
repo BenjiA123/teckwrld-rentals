@@ -20,9 +20,6 @@ const NavigationComponent:FunctionComponent = ()=>{
                 <Link href='/cars'>
                 Budget
                 </Link>
-                <Link href='/cars'>
-                Our Cars
-                </Link>
                 </div>
                 <div className={styles.registration}> 
                 <Link href='/cars'>
