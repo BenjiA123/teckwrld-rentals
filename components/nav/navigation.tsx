@@ -14,23 +14,23 @@ const NavigationComponent:FunctionComponent = ()=>{
                 {/* </Link> */}
                 <div className={styles.nav_items}>
 
-                {/* <Link href='/cars'> */}
-                <a >Luxury</a>
-                {/* </Link> */}
-                {/* <Link href='/cars'> */}
-                <a >Budget</a>
-                {/* </Link> */}
-                {/* <Link href='/cars'> */}
-                <a >Our Cars</a>
-                {/* </Link> */}
+                <Link href='/cars'>
+                Luxury
+                </Link>
+                <Link href='/cars'>
+                Budget
+                </Link>
+                <Link href='/cars'>
+                Our Cars
+                </Link>
                 </div>
                 <div className={styles.registration}> 
-                {/* <Link href='/cars'> */}
-                <a >Login</a>
-                {/* </Link> */}
-                {/* <Link href='/cars'> */}
-                <a >Register</a>
-                {/* </Link> */}
+                <Link href='/cars'>
+                Login
+                </Link>
+                <Link href='/cars'>
+                Register
+                </Link>
                 </div>
             </div>
             </>

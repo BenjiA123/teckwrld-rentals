@@ -3,9 +3,7 @@ import { FunctionComponent } from "react"
 import Image from 'next/image'
 import styles from './Car-preview.module.css'
 
-const CarPreviewComponent:FunctionComponent = (props:any)=>{
-    console.log(props)
-
+const CarPreviewComponent:any = (props:any)=>{
  interface Car 
     {
     id:Number,
@@ -31,7 +29,7 @@ const CarPreviewComponent:FunctionComponent = (props:any)=>{
             <>
             <section className={styles.car_preview_section}>
                 <div className={styles.car_preview_description}>
-                    <h2>Get Any Car Type</h2>
+                    <h2>Get Any Car {props.type}</h2>
                     <p>We rent Cars for all groups and budgets to provide the best
                         experiences for our clients
                     </p>

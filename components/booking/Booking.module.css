@@ -9,8 +9,12 @@
     padding: 2rem;
 }
 .booking{
-    padding: 2rem;
+    padding: 1rem;
+
     display: flex;
+}
+.booking :last-child{
+    padding-left: 2rem;
 }
 .booking input, .booking select{
     height: 2rem;

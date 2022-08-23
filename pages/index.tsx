@@ -20,8 +20,9 @@ const Home: NextPage = () => {
       </Head>
       <NavigationComponent/>
       <HeaderComponent/>
-      <CarPreviewComponent />
-      <CarPreviewComponent />
+      
+      <CarPreviewComponent type="BUDGET"/>
+      <CarPreviewComponent type="LUXURY"/>
       <BookingComponent/>
 
 
