@@ -4,19 +4,12 @@ import Image from 'next/image'
 import styles from './Header.module.css'
 
 const HeaderComponent:FunctionComponent = ()=>{
-
-    const videoRef = './FREE CLIP HD FOOTAGE - Calm Water Surface (Link In Description).mp4'
     return (
-        <div>
+        <div className={styles.header}>
             <>
-            {/* <video className={styles.video}
-            // ref={videoRef}
-            src="./headerVideo.mp4"
-            controls
-            width="100%"
-            loop
-            >
-       </video> */}
+                {/* <video autoPlay muted loop className={styles.video}>         
+                    <source src="./headerVideo.mp4" type="video/mp4"/>       
+                </video> */}
             <div className={styles.slider}>
 
                 <h1 className={styles.intro_text}>TeckWrld Rentals, <span className={styles.intro_text_description}>where any car is just a call away</span></h1>
