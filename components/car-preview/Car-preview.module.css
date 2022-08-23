@@ -31,8 +31,8 @@
     cursor: pointer;
   border: 1px solid black;
   margin: 1rem;
-  padding: .8rem;
-  border-radius: 2rem;
+  padding: 1.4rem;
+  border-radius: 2rem 0 2rem 0;
 }
 .car_preview_cards *:last-child{
   margin: 1rem;

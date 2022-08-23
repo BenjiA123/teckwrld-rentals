@@ -9,6 +9,7 @@
     align-items: center;
     padding-bottom: 1rem;
     flex-direction: column;
+    z-index: 3;
 }
 .intro_text{
     font-size: 4rem;
@@ -30,4 +31,9 @@
 }
 .intro_text_description{
     font-size: 3rem;
+}
+
+.video{
+    position: absolute;
+    height: auto;
 }

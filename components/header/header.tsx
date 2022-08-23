@@ -5,9 +5,18 @@ import styles from './Header.module.css'
 
 const HeaderComponent:FunctionComponent = ()=>{
 
+    const videoRef = './FREE CLIP HD FOOTAGE - Calm Water Surface (Link In Description).mp4'
     return (
         <div>
             <>
+            {/* <video className={styles.video}
+            // ref={videoRef}
+            src="./headerVideo.mp4"
+            controls
+            width="100%"
+            loop
+            >
+       </video> */}
             <div className={styles.slider}>
 
                 <h1 className={styles.intro_text}>TeckWrld Rentals, <span className={styles.intro_text_description}>where any car is just a call away</span></h1>
