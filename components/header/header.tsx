@@ -7,6 +7,9 @@ const HeaderComponent:FunctionComponent = ()=>{
     return (
         <div className={styles.header}>
             {/* <> */}
+            <video autoPlay muted loop className={styles.video}>         
+                    <source src="./carvid.mp4" type="video/mp4"/>       
+                </video>
                
             <div className={styles.slider}>
 
@@ -19,9 +22,6 @@ const HeaderComponent:FunctionComponent = ()=>{
                     
                 </div>
             </div>
-            <video autoPlay muted loop className={styles.video}>         
-                    <source src="./carvid.mp4" type="video/mp4"/>       
-                </video>
             {/* </> */}
         </div>
     )
