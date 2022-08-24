@@ -6,10 +6,8 @@ import styles from './Header.module.css'
 const HeaderComponent:FunctionComponent = ()=>{
     return (
         <div className={styles.header}>
-            <>
-                {/* <video autoPlay muted loop className={styles.video}>         
-                    <source src="./headerVideo.mp4" type="video/mp4"/>       
-                </video> */}
+            {/* <> */}
+               
             <div className={styles.slider}>
 
                 <h1 className={styles.intro_text}>TeckWrld Rentals, <span className={styles.intro_text_description}>where any car is just a call away</span></h1>
@@ -21,7 +19,10 @@ const HeaderComponent:FunctionComponent = ()=>{
                     
                 </div>
             </div>
-            </>
+            <video autoPlay muted loop className={styles.video}>         
+                    <source src="./carvid.mp4" type="video/mp4"/>       
+                </video>
+            {/* </> */}
         </div>
     )
 }

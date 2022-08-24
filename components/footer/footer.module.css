@@ -1,0 +1,31 @@
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #0f0f0f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* padding: 2rem; */
+}
+
+.row{
+    text-align: center;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.links *{
+    flex: 1;
+}
+@media only screen and (max-width: 700px) {
+    .links{
+        flex-direction: column;
+        justify-content: left;
+    }
+    }

@@ -1,12 +1,20 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { wrapper } from "../store/store";
+import AppLayout from '../components/app-layout'
 
 
 import { setAuthState } from "../store/authSlice";
+import { AuthProvider } from '../contexts/AuthProvider';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <AuthProvider>
+      <AppLayout>
+        <Component {...pageProps} />
+      </AppLayout>
+     </AuthProvider>
+      )
 }
 
 export default wrapper.withRedux(MyApp)

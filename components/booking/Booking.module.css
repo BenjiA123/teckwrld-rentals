@@ -13,9 +13,6 @@
 
     display: flex;
 }
-.booking :last-child{
-    padding-left: 2rem;
-}
 .booking input, .booking select{
     height: 2rem;
     border-radius: 1rem;

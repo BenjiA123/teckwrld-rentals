@@ -1,9 +1,12 @@
 import Link from "next/link"
-import { FunctionComponent } from "react"
+import { FunctionComponent, useContext } from "react"
 import styles from './Navigation.module.css'
 import Image from 'next/image'
+import AuthContext from "../../contexts/AuthProvider"
 
 const NavigationComponent:FunctionComponent = ()=>{
+
+    const {authState, setAuthState}:any = useContext(AuthContext)
 
     return (
         <div>
@@ -21,13 +24,20 @@ const NavigationComponent:FunctionComponent = ()=>{
                 Budget
                 </Link>
                 </div>
+                
                 <div className={styles.registration}> 
-                <Link href='/cars'>
+               { authState?
+               <>
+               
+               <Link href='/auth/signin'>
                 Login
                 </Link>
-                <Link href='/cars'>
+                <Link href='/auth/register'>
                 Register
                 </Link>
+               </>
+               : null
+                }
                 </div>
             </div>
             </>
