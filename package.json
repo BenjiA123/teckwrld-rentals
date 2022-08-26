@@ -12,6 +12,7 @@
     "@react-google-maps/api": "^2.12.2",
     "@reduxjs/toolkit": "^1.8.5",
     "chart.js": "^3.9.1",
+    "flutterwave-node-v3": "^1.0.10",
     "google-maps": "^4.3.3",
     "next": "12.2.5",
     "next-redux-wrapper": "^7.0.5",
