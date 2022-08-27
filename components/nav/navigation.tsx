@@ -23,7 +23,7 @@ const NavigationComponent: FunctionComponent = () => {
           {/* </> */}
         </Link>
         <div className={styles.nav_items}>
-          <Link href="/cars">OUR CARS</Link>
+          <Link href="/cars">CARS</Link>
         </div>
 
         <div className={styles.registration}>

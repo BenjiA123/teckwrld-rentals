@@ -2,6 +2,10 @@ import { NextPage } from "next";
 import Link from "next/link";
 import styles from "./cars.module.css";
 
+import Script from "next/script";
+import { useState } from "react";
+
+declare const window: any;
 const CarsPage: NextPage = () => {
   const carsOnPreview: any[] = [
     {
@@ -94,8 +98,18 @@ const CarsPage: NextPage = () => {
         "ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus",
     },
   ];
+  const [stripe, setStripe]: any = useState(null);
+
+  // console.log(stripe);
   return (
     <>
+      <Script
+        id="stripe-js"
+        src="https://js.stripe.com/v3/"
+        onLoad={(): any => {
+          setStripe({ stripe: window.Stripe("pk_test_12345") });
+        }}
+      />
       <header className={styles.carsHeader}>
         <h2>View All Available Cars</h2>
         <p>

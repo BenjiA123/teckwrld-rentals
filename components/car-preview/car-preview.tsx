@@ -155,6 +155,7 @@ const CarPreviewComponent: any = (props: any) => {
                   src={"/header_background.jpg"}
                   alt="Car Image"
                   width="200"
+                  loading="lazy"
                   height="100%"
                   layout="responsive"
                 />
