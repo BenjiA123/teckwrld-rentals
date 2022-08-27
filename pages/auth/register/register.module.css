@@ -1,13 +1,65 @@
-.register_card{
-    border-radius: 2rem 0 2rem 0;
-    height: 30rem;
-    width: 50%;
-    margin: auto;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    box-shadow: 0 15px 10px rgba(18, 12, 12, 0.5); 
-    outline: 1px solid black;
-    padding: 2rem;
+.register_page {
+  width: 100%;
+  display: flex;
+  background-color: orange;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(5, 6, 8, 0.85),
+      rgba(255, 168, 0, 0.25)
+    ),
+    url(/cars/signup_car.jpg);
+  /* background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 50%,
+      transparent 50%
+    ),
+    url(/cars/signup_car.jpg); */
+  background-position: center;
+  height: auto;
+  min-height: 80vh;
+  background-size: cover;
+}
 
+.register_page * {
+  flex: 1;
+}
+.register_page :last-child {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.register_page input {
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  width: 65%;
+}
+.register_page input:focus {
+  border: none;
+  outline: none;
+}
+.register_des {
+  width: 90%;
+  padding: 1rem;
+  padding-top: 0;
+  margin-top: 3rem;
+}
 
+.register_des h2 {
+  font-size: 5rem;
+  color: orange;
+}
+.register_des p {
+  color: white;
+  text-align: left;
+}
+
+@media only screen and (max-width: 700px) {
+  /* .register_page :first-child { */
+  /* display: none; */
+  /* } */
+  .register_page {
+    flex-direction: column;
+  }
 }

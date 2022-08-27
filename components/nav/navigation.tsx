@@ -8,37 +8,35 @@ const NavigationComponent: FunctionComponent = () => {
   const { authState, setAuthState }: any = useContext(AuthContext);
 
   return (
-    <div>
-      <>
-        <div className={styles.navigation}>
-          <Link href="/" passHref>
-            {/* <> */}
-            <a>
-              <Image
-                alt="Just a test"
-                src="/favicon.ico"
-                width="30px"
-                height="30px"
-              />
-            </a>
-            {/* </> */}
-          </Link>
-          <div className={styles.nav_items}>
-            <Link href="/cars">OUR CARS</Link>
-          </div>
-
-          <div className={styles.registration}>
-            {authState ? (
-              <>
-                <Link href="/auth/register">Register</Link>
-              </>
-            ) : (
-              <Link href="/auth/signin">Login</Link>
-            )}
-          </div>
+    <>
+      <nav className={styles.navigation}>
+        <Link href="/" passHref>
+          {/* <> */}
+          <a>
+            <Image
+              alt="Just a test"
+              src="/favicon.ico"
+              width="30px"
+              height="30px"
+            />
+          </a>
+          {/* </> */}
+        </Link>
+        <div className={styles.nav_items}>
+          <Link href="/cars">OUR CARS</Link>
         </div>
-      </>
-    </div>
+
+        <div className={styles.registration}>
+          <Link href="/auth/register">Register</Link>
+          <Link href="/auth/signin">Login</Link>
+          {/* {authState ? (
+            <>
+            </>
+          ) : (
+          )} */}
+        </div>
+      </nav>
+    </>
   );
 };
 

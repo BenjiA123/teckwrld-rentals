@@ -1,32 +1,44 @@
-.navigation{
-    background-color: black !important;
-    color: white;
-    display: flex;
-    height: 5rem;
-    align-items: center;
-    justify-content: space-between;
-    padding: .1rem 2rem;
+.navigation {
+  background-color: black !important;
+  color: white;
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  justify-content: space-between;
+  padding: 0.1rem 2rem;
 }
 
-
-.nav_items{
-    text-transform: uppercase;
+.nav_items {
+  text-transform: uppercase;
 }
 
-.nav_items *{
-    
-    text-decoration: none;
-    color: white;
-    padding-right: 2rem;
+.nav_items * {
+  text-decoration: none;
+  color: white;
+  padding-right: 2rem;
 }
-.registration *{
-    text-decoration: none;
-    padding: .8rem;
-    margin-right: .5rem;
-    border-radius: 3rem;
-    color: white;
-    text-transform: uppercase;
-    border: 1px solid white;
+.registration * {
+  text-decoration: none;
+  padding: 0.8rem;
+  margin-right: 0.5rem;
+  border-radius: 1rem;
+  color: white;
+  background-color: orange;
+  text-transform: uppercase;
+  /* border: 1px solid white; */
+}
 
-
+.registration :first-child {
+  text-decoration: none;
+  padding: 0.8rem;
+  margin-right: 0.5rem;
+  border-radius: 1rem;
+  color: orange;
+  background-color: transparent;
+  outline: 1px solid orange;
+  text-transform: uppercase;
+  /* border: 1px solid white; */
 }

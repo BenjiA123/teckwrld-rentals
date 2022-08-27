@@ -1,95 +1,118 @@
-.header{
-    position: relative;
-    width: 100%;
+.header {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  background-image: linear-gradient(
+      rgba(199, 202, 39, 0.25),
+      rgba(5, 6, 8, 0.85),
+      rgba(255, 255, 255, 0.25)
+    ),
+    url(/header_background.jpg);
+
+  background-position: center;
+  height: auto;
+  min-height: 70vh;
+  background-size: cover;
 }
 
-.slider{
-    background-color: transparent;
-    height: auto;
-    color: black;
-    padding-top: 8rem;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    padding-bottom: 1rem;
-    flex-direction: column;
-
+.slider {
+  background-color: transparent;
+  height: auto;
+  color: white;
+  padding-top: 8rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 1rem;
+  flex-direction: column;
 }
-.intro_text{
-    font-size: 4rem;
-    text-align: center;
-    width: 50%;
-}
-
-.cta_items{
-    margin-top: 3rem;
-    display: flex;
-}
-.cta_items *{
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin: 1rem;
-    border-radius: 20rem;
-    border: 1px solid black;
-    color: black;
-    padding: 1rem;
-}
-.cta_items :last-child{
-    background-color: black;
-    color: white;
-    font-weight: 200;
-}
-.intro_text_description{
-    font-size: 3rem;
-
-    background-position: right bottom !important;
-    /* background-image: linear-gradient(270deg, var(--secondary_color),var(--black_color)); */
-    background-image: linear-gradient(270deg, red,blue,yellowgreen);
-    background-size: 50% 3px;
-    height: 4px;
-    background-repeat: no-repeat;
-    transition: background-size 300ms ease;
-
+.intro_text h1 {
+  font-size: 4rem;
+  text-align: center;
+  width: 100%;
+  font-weight: 700;
+  color: orange;
 }
 
-.intro_text_description:hover{
-    background-size: 100% 3px;
-  }
-.video{
-    position: absolute; 
-    top: 0; 
-    right: 0;
-    min-width: 100vw; 
-    max-height: 100%;
-    width: auto; 
-    height: auto; 
-    z-index: -100;
-    background-size: cover;
-    overflow: hidden;
+.cta_items {
+  margin-top: 3rem;
+  display: flex;
+}
+.cta_items * {
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  color: black;
+  padding: 1rem;
+  border: none;
+}
+.cta_items *:focus {
+  outline: none;
+}
+.cta_items span {
+  position: absolute;
+  background-color: transparent;
+  font-size: 2rem;
+  transform: translateY(-0.3rem);
+  color: orange;
+}
+.cta_items input {
+  padding-left: 3rem;
+}
+.cta_items :last-child {
+  background-color: orange;
+  color: white;
+  font-weight: 200;
+  border-radius: 1px solid white !important;
+}
+.intro_text_description {
+  font-size: 3rem;
+  color: white;
+  background-position: right bottom !important;
+  background-image: linear-gradient(20deg, orange, white, black);
+  background-size: 50% 3px;
+  text-align: center;
+  background-repeat: no-repeat;
+  transition: background-size 300ms ease;
+}
+
+.intro_text_description:hover {
+  background-size: 100% 3px;
+}
+.video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100vw;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
 }
 
 @media screen and(min-width:920px) {
-    .video{
-        display: none !important;
-        visibility: hidden;
-    }
+  .video {
+    display: none !important;
+    visibility: hidden;
+  }
 }
 
-@media only screen and (max-width:700px) {
-    .intro_text{
-        font-size: 3rem;
-        width: 80%;
-    }
+@media only screen and (max-width: 700px) {
+  .intro_text {
+    font-size: 3rem;
+    width: 80%;
   }
+}
 
-  @media only screen and (max-width:500px) {
-      .cta_items{
-          flex-direction: column;
-          align-items: center;
-        }
-    .cta_items *{
-        padding: .75rem;
-    }
+@media only screen and (max-width: 500px) {
+  .cta_items {
+    flex-direction: column;
+    align-items: center;
   }
-
-
+  .cta_items * {
+    padding: 0.75rem;
+  }
+}

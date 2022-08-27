@@ -1,73 +1,76 @@
-.booking_section{
-    background-color: #0f0f0f;
-    color: white;
+.booking_section {
+  background-color: #0f0f0f;
+  color: white;
+  width: auto;
+  padding: 1rem;
 }
 
-.booking_header{
-    font-size: 3rem;
-    text-align: center;
-    padding: 2rem;
+.booking_header {
+  font-size: 3rem;
+  text-align: center;
+  /* padding: 2rem; */
 }
-.booking{
-    padding: 1rem;
+.booking {
+  padding: 1rem;
 
-    display: flex;
+  display: flex;
 }
-.booking input, .booking select{
-    height: 2rem;
-    border-radius: 1rem;
-    border: none;
-    margin: 1rem;
-    width: 60%;
-    padding: 1rem;
+.booking input,
+.booking select {
+  height: 2rem;
+  border-radius: 1rem;
+  border: none;
+  margin: 1rem;
+  width: 70%;
+  padding: 1rem;
 }
-.booking select{
-    height: 4rem;
-    width: 90%;
-    padding: 0;
+.booking select {
+  height: 4rem;
+  width: 70%;
+  padding: 1rem;
 }
-
-.booking input:focus,.booking select:focus{
-    border: none;
-    outline: none;
-}
-.booking_form{
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-}
-.booking_info{
-    flex: 1;
-}
-.booking_info h2{
-    font-size: 2rem;
+.bookings_btn {
+  border: none;
+  margin: 1rem;
 }
 
-.getCar{
-    background-color: transparent;
-    color: white;
-    border-radius: 2rem;
-    border: 1px solid white;
-    padding: 1rem;
-    margin: 2rem;
-    height: 4.5rem;
-    width: 80%;
+.booking input:focus,
+.booking select:focus {
+  border: none;
+  outline: none;
+}
+.booking_form {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.booking_info {
+  flex: 1;
+}
+.booking_info h2 {
+  font-size: 2rem;
+}
+
+.getCar {
+  background-color: transparent;
+  color: white;
+  border-radius: 2rem;
+  border: 1px solid white;
+  padding: 1rem;
+  /* margin: 2rem; */
+  height: auto;
+  width: 80%;
 }
 
 @media only screen and (max-width: 700px) {
-    .booking{
-        flex-direction: column;
-    }
-    
+  .booking {
+    flex-direction: column;
+  }
 }
-
 
 @media only screen and (max-width: 470px) {
-    .booking_form{
-        grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-    
-    }
+  .booking_form {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
 }
-

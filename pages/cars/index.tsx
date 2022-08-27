@@ -104,22 +104,27 @@ const CarsPage: NextPage = () => {
           necessitatibus.
         </p>
       </header>
+
+      <div className={styles.search_cars}>
+        <input type="text" placeholder="Search Cars" id="" />
+        <input type="button" className="cta_btn" value="Filter" />
+      </div>
       <section className={styles.carsCategories}>
         {carsOnPreview.map((car, i) => {
           return (
             <div key={i} className={styles.car_preview_cards}>
               <h3>{car.name}</h3>
-              <span>{car.name}</span>
               <br />
-              <span>{car.price}</span>
-              <br />
+              {/* <span>{car.price}</span> */}
+              {/* <br /> */}
               <p>{car.description}</p>
+              <br />
               <a
-                className={styles.seeMore}
+                className="cta_btn"
                 key={i}
                 href={`/cars/${encodeURIComponent(car.name)}`}
               >
-                See More
+                Only ${car.price}
               </a>
             </div>
           );

@@ -3,8 +3,143 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   /* overflow-x: hidden; */
   font-size: 14.5px;
 }
 
+.cta_btn {
+  background-color: orange;
+  color: white;
+  border-radius: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+footer {
+  color: white;
+  padding-bottom: 1rem;
+  background-color: #0f0f0f;
+  text-align: left;
+}
+footer p {
+  font-size: 0.7rem;
+  line-height: 1.3rem;
+  margin: 1rem;
+}
+
+.container {
+  padding: 2rem 1.2rem;
+  padding-bottom: 0;
+}
+.container .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.container .row * {
+  margin: 0.2rem;
+  flex: 1;
+}
+footer .container .row :first-child {
+  flex: 2;
+}
+
+.container .col {
+  margin-right: 1rem;
+}
+
+footer .container .col h3 {
+  font-weight: 500;
+  margin-bottom: 0.65rem;
+}
+.container .col ul {
+  list-style: none;
+  width: 100%;
+  font-size: 0.54rem;
+}
+.container .col ul li {
+  margin-bottom: 0.45rem;
+}
+.container .col ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 100;
+}
+
+footer .social_icons ol {
+  margin-top: 1rem;
+}
+footer .social_icons ol li {
+  float: left;
+  list-style: none;
+  font-size: 0.75rem;
+  margin-right: 0.6rem;
+}
+.fa {
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-instagram {
+  color: #560462;
+  background: #0f0f0f;
+}
+
+.fa-facebook {
+  color: #3b5998;
+  background: #0f0f0f;
+}
+
+.fa-youtube {
+  color: #da1010;
+  background: var(--black_color);
+}
+.fa-twitter {
+  color: #55acee;
+  background: #0f0f0f;
+}
+.fa-whatsapp {
+  color: #5fa75f;
+  background: #0f0f0f;
+}
+
+.fa-linkedin {
+  color: #007bb5;
+  background: #0f0f0f;
+}
+.fa-money {
+  color: orange;
+  background: transparent;
+}
+.fa-user {
+  color: orange;
+  background: transparent;
+}
+.fa-star {
+  color: orange;
+  background: transparent;
+}
+.fa-map-marker {
+  color: orange;
+  background: transparent;
+}
+.contact_us .fa {
+  font-size: 0.6rem;
+  padding: 0;
+}
+@media only screen and (max-width: 700px) {
+  footer .container .row {
+    flex-direction: column;
+  }
+}
