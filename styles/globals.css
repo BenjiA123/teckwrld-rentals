@@ -129,6 +129,8 @@ footer .social_icons ol li {
 .fa-star {
   color: orange;
   background: transparent;
+  font-size: 0.9rem;
+  padding-right: 0.3rem;
 }
 .fa-map-marker {
   color: orange;

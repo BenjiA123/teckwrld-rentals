@@ -12,14 +12,14 @@ const CarPreviewComponent: any = (props: any) => {
     seatNo: Number;
     location: String;
     price: String;
-    rating: String;
+    rating: Number;
     description: String;
   }
 
   const carsOnPreview: Car[] = [
     {
       id: 1,
-      rating: "4",
+      rating: 4,
       name: "Dodge",
       fueled: false,
       carGrade: 1,
@@ -31,7 +31,7 @@ const CarPreviewComponent: any = (props: any) => {
     },
     {
       id: 2,
-      rating: "4",
+      rating: 4,
       name: "Toyota",
       fueled: true,
       carGrade: 2,
@@ -43,7 +43,7 @@ const CarPreviewComponent: any = (props: any) => {
     },
     {
       id: 3,
-      rating: "4",
+      rating: 4,
       name: "Chevrolet",
       fueled: false,
       carGrade: 3,
@@ -55,7 +55,7 @@ const CarPreviewComponent: any = (props: any) => {
     },
     {
       id: 4,
-      rating: "4",
+      rating: 4,
       name: "Ford",
       fueled: true,
       carGrade: 4,
@@ -67,7 +67,7 @@ const CarPreviewComponent: any = (props: any) => {
     },
     {
       id: 5,
-      rating: "4",
+      rating: 4,
       name: "Volvo",
       fueled: false,
       carGrade: 5,
@@ -78,7 +78,7 @@ const CarPreviewComponent: any = (props: any) => {
     },
     {
       id: 6,
-      rating: "4",
+      rating: 4,
       name: "Pontiac",
       fueled: false,
       carGrade: 6,
@@ -90,7 +90,7 @@ const CarPreviewComponent: any = (props: any) => {
     },
     {
       id: 7,
-      rating: "4",
+      rating: 4,
       name: "Eagle",
       fueled: true,
       carGrade: 7,
@@ -102,7 +102,7 @@ const CarPreviewComponent: any = (props: any) => {
     },
     {
       id: 8,
-      rating: "3",
+      rating: 3,
       name: "Mercedes-Benz",
       fueled: false,
       carGrade: 8,
@@ -114,7 +114,7 @@ const CarPreviewComponent: any = (props: any) => {
     },
     {
       id: 9,
-      rating: "1",
+      rating: 1,
       name: "Dodge",
       fueled: true,
       carGrade: 9,
@@ -126,7 +126,7 @@ const CarPreviewComponent: any = (props: any) => {
     },
     {
       id: 10,
-      rating: "4",
+      rating: 4,
       name: "Aston Martin",
       fueled: false,
       carGrade: 10,
@@ -175,8 +175,11 @@ const CarPreviewComponent: any = (props: any) => {
                       <i className="fa fa-money"></i>&nbsp;&nbsp; ${car.price}
                     </li>
                     <li>
-                      <i className="fa fa-star"></i>&nbsp;&nbsp;
-                      {car.rating}
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
                     </li>
                   </div>
                 </ul>
