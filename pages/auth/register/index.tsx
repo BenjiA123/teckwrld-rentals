@@ -9,10 +9,8 @@ export default class Register extends React.Component {
           <div className={styles.register_des}>
             <h2>Sign Up</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
-              facere minus minima eveniet explicabo recusandae velit totam
-              labore unde. Ex neque voluptatum laboriosam accusamus eos ipsum
-              aut possimus quidem sequi?
+              Welcome To TeckWrld Rental where Car Rental is just a call away,
+              Sign Up and get a 10% discount on you first 5 Rents.
             </p>
           </div>
           <div className={styles.register_form}>

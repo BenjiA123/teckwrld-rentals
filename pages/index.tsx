@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import HeaderComponent from "../components/header/header";
 import CarPreviewComponent from "../components/car-preview/car-preview";
 import BookingComponent from "../components/booking/booking";
+import ChartComponent from "../components/chart/chart";
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <CarPreviewComponent type="BUDGET" />
       <CarPreviewComponent type="LUXURY" />
       <BookingComponent />
+      <ChartComponent />
     </div>
   );
 };

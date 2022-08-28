@@ -112,11 +112,7 @@ const CarsPage: NextPage = () => {
       />
       <header className={styles.carsHeader}>
         <h2>View All Available Cars</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. officiis
-          vitae ad iusto nostrum quis animi voluptatibus repudiandae
-          necessitatibus.
-        </p>
+        <p>Have a Look At Our Inventory Of Cars And pick what Suites you.</p>
       </header>
 
       <div className={styles.search_cars}>

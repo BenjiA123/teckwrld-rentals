@@ -10,22 +10,30 @@ const data = {
   labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
   datasets: [
     {
-      data: [12, 3, 9, 4, 9, 5],
-      label: "Transactions",
-      backgroundColor: "transparent",
+      data: [10, 3, 9, 4, 9, 5],
+      label: "LUXURY",
+      backgroundColor: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      borderColor: "red",
+      pointRadius: 0.7,
+      borderWidth: 0.3,
+    },
+    {
+      data: [1, 8, 3, 9, 3, 1],
+      label: "BUDGET",
+      backgroundColor: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
       borderColor: "black",
-      pointRadius: 3,
+      pointRadius: 0.7,
       borderWidth: 0.3,
     },
     {
       data: [2, 5, 5, 6, 3, 3],
-      backgroundColor: ["green", "green", "black", "red", "white", "purple"],
-      label: "Transactions",
+      label: "MIDDLE-CLASS",
       pointBorderWidth: 2,
+      borderColor: "limegreen",
       pointHoverRadius: 5,
-      borderWidth: 2,
+      borderWidth: 0.3,
       pointHoverBorderWidth: 5,
-      pointRadius: 1,
+      pointRadius: 0.7,
       spanGaps: true,
     },
   ],
@@ -43,10 +51,13 @@ const data = {
 const ChartComponent: FunctionComponent = () => {
   return (
     <>
-      <div className={styles.chart}>
-        <Line data={data} />
-        <Doughnut data={data} />
-      </div>
+      <section className={styles.sectionCharts}>
+        <h2>Our Metrics</h2>
+        <div className={styles.charts}>
+          <Line data={data} />
+          <Doughnut data={data} />
+        </div>
+      </section>
     </>
   );
 };
