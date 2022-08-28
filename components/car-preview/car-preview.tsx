@@ -39,7 +39,7 @@ const CarPreviewComponent: any = (props: any) => {
       seatNo: 4,
       location: "Zungeru",
       description:
-        "etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus",
+        "sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus",
     },
     {
       id: 3,
@@ -51,7 +51,7 @@ const CarPreviewComponent: any = (props: any) => {
       seatNo: 4,
       location: "Dubai",
       description:
-        "justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices",
+        "sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus",
     },
     {
       id: 4,
@@ -63,7 +63,7 @@ const CarPreviewComponent: any = (props: any) => {
       seatNo: 4,
       location: "Finland",
       description:
-        "vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec",
+        "sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus",
     },
     {
       id: 5,
@@ -74,7 +74,8 @@ const CarPreviewComponent: any = (props: any) => {
       price: "89427",
       seatNo: 4,
       location: "Bauchi",
-      description: "mauris enim leo rhoncus sed vestibulum sit amet cursus id",
+      description:
+        "sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus",
     },
     {
       id: 6,
@@ -86,7 +87,7 @@ const CarPreviewComponent: any = (props: any) => {
       seatNo: 4,
       location: "Minna",
       description:
-        "lectus in est risus auctor sed tristique in tempus sit amet sem fusce",
+        "sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus",
     },
     {
       id: 7,
@@ -98,7 +99,7 @@ const CarPreviewComponent: any = (props: any) => {
       seatNo: 4,
       location: "Gboko",
       description:
-        "eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in",
+        "sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus",
     },
     {
       id: 8,
@@ -110,7 +111,7 @@ const CarPreviewComponent: any = (props: any) => {
       seatNo: 4,
       location: "America",
       description:
-        "quisque arcu libero rutrum ac lobortis vel dapibus at diam nam",
+        "sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus",
     },
     {
       id: 9,
@@ -122,7 +123,7 @@ const CarPreviewComponent: any = (props: any) => {
       seatNo: 4,
       location: "Dubai",
       description:
-        "ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus",
+        "sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus",
     },
     {
       id: 10,
@@ -134,7 +135,7 @@ const CarPreviewComponent: any = (props: any) => {
       seatNo: 4,
       location: "Dubai",
       description:
-        "ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus",
+        "sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus",
     },
   ];
   return (

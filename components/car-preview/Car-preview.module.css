@@ -44,12 +44,7 @@
   text-transform: uppercase;
   box-decoration-break: clone;
   background-color: black;
-  color: white;
-  /* background-image: linear-gradient(
-    to bottom right,
-    orange,
-    rgba(5, 2, 1, 0.85)
-  ); */
+  color: orange;
 }
 
 .car_details {

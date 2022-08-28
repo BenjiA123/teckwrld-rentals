@@ -7,7 +7,7 @@ import { Chart, ArcElement } from "chart.js";
 Chart.register(ArcElement);
 
 const data = {
-  labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+  labels: ["Monday", "Tuesday", "Wednesdat", "Thursday", "Friday", "Saturday"],
   datasets: [
     {
       data: [10, 3, 9, 4, 9, 5],
@@ -43,7 +43,7 @@ const data = {
       x: {
         //? This enables the next chart to be stacked on the previous
         // ? False for now
-        stacked: true,
+        stacked: false,
       },
     },
   },

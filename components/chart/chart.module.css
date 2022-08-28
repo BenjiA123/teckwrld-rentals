@@ -1,6 +1,7 @@
 .sectionCharts h2 {
   text-align: center;
   padding: 2rem;
+  padding-bottom: 0;
   text-transform: uppercase;
   font-size: 3rem;
 }
@@ -14,6 +15,7 @@
 }
 
 .charts * {
+  max-width: 100%;
   flex: 1;
 }
 
