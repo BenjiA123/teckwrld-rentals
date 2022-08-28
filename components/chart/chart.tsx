@@ -55,7 +55,7 @@ const ChartComponent: FunctionComponent = () => {
         <h2>Our Metrics</h2>
         <div className={styles.charts}>
           <Line data={data} />
-          <Doughnut data={data} />
+          {/* <Doughnut data={data} /> */}
         </div>
       </section>
     </>
