@@ -78,26 +78,7 @@
 }
 
 .intro_text_description:hover {
-  background-size: 100% 3px;
-}
-.video {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 100vw;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  background-size: cover;
-  overflow: hidden;
-}
-
-@media screen and(min-width:920px) {
-  .video {
-    display: none !important;
-    visibility: hidden;
-  }
+  background-size: 80% 3px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -111,6 +92,12 @@
   .cta_items {
     flex-direction: column;
     align-items: center;
+  }
+  .cta_items input {
+    width: 10rem;
+  }
+  .cta_items span {
+    transform: translateX(-5.5rem);
   }
   /* .cta_items * {
     padding: 0.75rem;
