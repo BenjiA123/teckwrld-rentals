@@ -27,13 +27,13 @@ const NavigationComponent: FunctionComponent = () => {
         </div>
 
         <div className={styles.registration}>
-          <Link href="/auth/register">Register</Link>
-          <Link href="/auth/signin">Login</Link>
-          {/* {authState ? (
+          {authState ? (
             <>
+              <Link href="/auth/signin">Login</Link>
             </>
           ) : (
-          )} */}
+            <Link href="/auth/register">Register</Link>
+          )}
         </div>
       </nav>
     </>

@@ -1,11 +1,13 @@
+import React from "react";
+import { loadStripe } from "@stripe/stripe-js";
 import { NextPage } from "next";
-import Link from "next/link";
 import styles from "./cars.module.css";
 
-import Script from "next/script";
 import { useState } from "react";
 
-declare const window: any;
+const stripePromise: any = loadStripe(
+  "pk_test_51LbltpIpjMyuQ05HPgockj66HbSOIDvXPAPXmv6Hgw8vJC3Wnaokb196lxDliPjfNOVFNlDfr40WTYH175c2f8V700KrrRM7hW"
+);
 const CarsPage: NextPage = () => {
   const carsOnPreview: any[] = [
     {
@@ -100,16 +102,25 @@ const CarsPage: NextPage = () => {
   ];
   const [stripe, setStripe]: any = useState(null);
 
-  // console.log(stripe);
+  React.useEffect(() => {
+    // Check to see if this is a redirect back from Checkout
+    const query = new URLSearchParams(window.location.search);
+    if (query.get("success")) {
+      console.log("Order placed! You will receive an email confirmation.");
+    }
+
+    if (query.get("canceled")) {
+      console.log(
+        "Order canceled -- continue to shop around and checkout when you’re ready."
+      );
+    }
+  }, []);
   return (
     <>
-      <Script
-        id="stripe-js"
-        src="https://js.stripe.com/v3/"
-        onLoad={(): any => {
-          setStripe({ stripe: window.Stripe("pk_test_12345") });
-        }}
-      />
+      {/* return ( */}
+
+      {/* ); */}
+
       <header className={styles.carsHeader}>
         <h2>View All Available Cars</h2>
         <p>Have a Look At Our Inventory Of Cars And pick what Suites you.</p>
@@ -122,7 +133,43 @@ const CarsPage: NextPage = () => {
       <section className={styles.carsCategories}>
         {carsOnPreview.map((car, i) => {
           return (
+            // stripe_checkout
+
             <div key={i} className={styles.car_preview_cards}>
+              {/* <form action="/api/stripe_checkout" method="POST">
+                <section>
+                  <button type="submit" role="link">
+                    Checkout
+                  </button>
+                </section>
+                <style jsx>
+                  {`
+                    section {
+                      background: #ffffff;
+                      display: flex;
+                      flex-direction: column;
+                      width: 400px;
+                      height: 112px;
+                      border-radius: 6px;
+                      justify-content: space-between;
+                    }
+                    button {
+                      height: 36px;
+                      background: #556cd6;
+                      border-radius: 4px;
+                      color: white;
+                      border: 0;
+                      font-weight: 600;
+                      cursor: pointer;
+                      transition: all 0.2s ease;
+                      box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+                    }
+                    button:hover {
+                      opacity: 0.8;
+                    }
+                  `}
+                </style>
+              </form> */}
               <h3>{car.name}</h3>
               <br />
               {/* <span>{car.price}</span> */}
